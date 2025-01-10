@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("netflix\ img.jpg");
+    background-size: max(1000px,100vw);
+    height:80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .box{
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.price{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.describe{
+    height: 100%;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    position: relative;
+    
+    gap:10px
+}
+.hero{
+    font-weight: 900;
+    font-size: 48px;
+}
+input{
+    height: 30px;
+    width: 150px;
+    padding-left:8px ;
+    padding-right: 50px;
+    color: white;
+    background-color: black;
+}
+.line{
+    height: 4px;
+    background-color: grey;
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    padding:9px 12px;
+    border-radius: 6px;
+}
+.first{
+    display: flex;
+    width: 70vw;
+    color: white;
+    margin: auto;
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    position: relative;
+    width: 400px;
+    z-index: 10;
+}
+.first div{
+    align-self: center;
+}
+.first>div{
+    display: flex;
+    flex-direction: column;
+}
+.first >div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first >div :nth-child(2){
+    font-size: 24px;
+}
+
+.secimg video{
+    width: 360px;
+    position:absolute;
+    right:30px;
+    top:32px;
+    overflow: hidden;
+}
+.FAQE{
+    padding: 20px;
+}
+
+.FAQE h1{
+    color: white;
+    text-align: center;
+}
+
+.list{
+    width: 70vw;
+   
+    margin: auto;
+    margin-top: 10px;
+    
+    font-size:x-large;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(53, 46, 46);;
+    padding: 10px;
+}
+.questions:hover{
+    background-color:gray;
+}
+
+.email{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+footer{
+    color:grey;
+    padding-top: 50px;
+    width: 70vw;
+    margin: auto;
+}
+.foot{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    padding-bottom: 50px;
+}
+.foot p{
+    text-decoration:underline;
+}
+@media(max-width:816px){
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
